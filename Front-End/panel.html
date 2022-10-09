@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/all.css">
+    <link rel="stylesheet" href="estilos/panel.css">
+    <title>Panel de Administracion</title>
+</head>
+<body>
+
+    <header>
+        <h3>Inicio</h3>
+        <button id="boton-menu-mobil">
+            <img src="iconos/bars.svg" alt="menu">
+        </button>
+    </header>
+    
+    <main>
+
+        <aside id="barra-lateral">
+
+            <button id="cerrar-barra-lateral">
+                <img src="iconos/circle-xmark.svg" alt="cerrar">
+            </button>
+
+            <ul class="menu-panel">
+                <li class="menu-panel-boton">
+                    <a href="">
+                        <img src="iconos/cube.svg" alt="inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li class="menu-panel-boton">
+                    <a href="">
+                        <img src="iconos/clipboard-list.svg" alt="">
+                        Inventario
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <section id="contenido">
+
+            <article class="dolar">
+                <h4>$ 8.50</h4>
+                <!-- <button id="cambio-dolar">
+                    <img src="iconos/rotate.svg" alt="cambiar">
+                </button> -->
+            </article>
+
+            <article class="lista-precios">
+
+                <table>
+
+                    <caption>
+                        <h3>Lista de Precios</h3>
+                    </caption>
+
+                    <thead>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Bs</th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>CocaCola 2L</td>
+                            <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>CocaCola 1.5L</td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Caramelo Vaca vieja</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Speed Max Lata</td>
+                            <td>8.50</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Control de Inventario
+    </footer>
+
+    <script src="js/panel.js"></script>
+</body>
+</html>

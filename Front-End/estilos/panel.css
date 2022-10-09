@@ -1,0 +1,159 @@
+main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: var(--color-fondo);
+}
+
+#boton-menu-mobil{
+    display: none;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: var(--color-fondo);
+}
+
+#barra-lateral{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--color-fondo);
+}
+
+.menu-panel{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu-panel-boton:hover:not(.active){
+    background-color: aliceblue;
+}
+
+.menu-panel-boton a{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 7px;
+}
+
+.menu-panel-boton img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+@media (max-width: 590px) {
+    #boton-menu-mobil{
+        display: flex;
+        border: none;
+        background-color: inherit;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    #barra-lateral{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: -130px;
+        height: 100vh;
+        transition: left 1s ease;
+    }
+
+    #cerrar-barra-lateral{
+        display: flex;
+        width: 20px;
+        cursor: pointer;
+        align-self: flex-end;
+        background-color: inherit;
+        border: none;
+        padding: 14px 5px;
+        margin-bottom: 1px;
+    }
+
+    /* ### Section ### */
+
+    #contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .lista-precios{
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px #b8b8b8;
+        margin: 5px;
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    caption{
+        padding: 10px;
+    }
+
+    tbody, thead{
+        text-align: justify;
+        font-size: small;
+    }
+
+    th{
+        padding: 5px;
+        background-color: #4c4c4c;
+        color: #ffffff;
+    }
+
+    td{
+        padding: 5px;
+    }
+
+    tr:nth-child(odd){
+        background-color: #e4e4e4;
+    }
+
+    tr:hover{
+        background-color: #fbff7e;
+    }
+
+    .dolar{
+        align-self: flex-start;
+        display: flex;
+        margin: 5px;
+        box-shadow: 1px 1px 3px #cccccc;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #cambio-dolar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #d2d2d2;
+        background-color: #a7fac2;
+        border-radius: 3px;
+        padding: 2px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    #cambio-dolar img{
+        width: 15px;
+    }
+}

@@ -1,0 +1,50 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-login{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 4px #8f8f8f;
+    border-radius: 5px;
+}
+
+.caja-login h3{
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 5px 10px;
+    background-color: #1e90ed;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+}
+
+.caja-login form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+[type="text"], [type="password"]{
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+    background-color: inherit;
+}
+
+[type="submit"]{
+    padding: 10px;
+    border: none;
+    background-color: #b6b6b6;
+    margin: 5px;
+    cursor: pointer;
+}
