@@ -132,28 +132,48 @@ footer{
         background-color: #fbff7e;
     }
 
-    .dolar{
-        align-self: flex-start;
+    .marcadores{
         display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
         margin: 5px;
-        box-shadow: 1px 1px 3px #cccccc;
-        padding: 5px;
-        border-radius: 5px;
     }
 
-    #cambio-dolar{
+    .marcador{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        box-shadow: 2px 2px 3px #b8b8b8;
+    }
+
+    .dollar{
+        background-color: #2fb75a;
+    }
+
+    .productos{
+        background-color: #4b87d5;
+    }
+
+    .marcador-texto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 30px;
+    }
+
+    .marcador-imagen{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid #d2d2d2;
-        background-color: #a7fac2;
-        border-radius: 3px;
-        padding: 2px;
-        margin-left: 10px;
-        cursor: pointer;
     }
 
-    #cambio-dolar img{
-        width: 15px;
+    .marcador-imagen img{
+        margin: 5px;
+        width: 30px;
+        height: 30px;
     }
 }
