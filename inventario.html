@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Front-End/estilos/all.css">
+    <link rel="stylesheet" href="Front-End/estilos/inventario.css">
+    <title>Panel de Administracion</title>
+</head>
+<body>
+
+    <header>
+        <h3>Inventario</h3>
+        <button id="boton-menu-mobil">
+            <img src="Front-End/iconos/bars.svg" alt="menu">
+        </button>
+    </header>
+    
+    <main>
+
+        <aside id="barra-lateral">
+
+            <button id="cerrar-barra-lateral">
+                <img src="Front-End/iconos/circle-xmark.svg" alt="cerrar">
+            </button>
+
+            <ul class="menu-panel">
+                <li class="menu-panel-boton">
+                    <a href="index.html">
+                        <img src="Front-End/iconos/cube.svg" alt="inicio">
+                        Inicio
+                    </a>
+                </li>
+                <li class="menu-panel-boton">
+                    <a href="inventario.html">
+                        <img src="Front-End/iconos/clipboard-list.svg" alt="">
+                        Inventario
+                    </a>
+                </li>
+            </ul>
+
+        </aside>
+
+        <section id="menu-inventario">
+
+            <div class="caja-opcion agregar">
+                <img src="Front-End/iconos/circle-plus.svg" alt="agregar">
+                <span>Crear Articulo</span>
+            </div>
+
+            <div class="caja-opcion eliminar">
+                <img src="Front-End/iconos/circle-minus.svg" alt="agregar">
+                <span>Eliminar Articulo</span>
+            </div>
+
+        </section>
+
+        <section id="contenido">
+
+            <article>
+                <div class="cabecera-articulo">
+                    <!-- Nombre del articulo -->
+                    <span class="nombre-articulo">CocaCola 2L</span>
+                    <!-- Cantidad del articulo -->
+                    <span>15-U</span>
+                    <button>
+                        <input type="hidden" name="">
+                        <img src="Front-End/iconos/pen.svg" alt="bajar-opciones">
+                    </button>
+                </div>
+
+                <div class="cuerpo-articulo">
+
+                </div>
+            </article>   
+            
+            <article>
+                <div class="cabecera-articulo">
+                    <!-- Nombre del articulo -->
+                    <span class="nombre-articulo">CocaCola 1.5L</span>
+                    <!-- Cantidad del articulo -->
+                    <span>15-U</span>
+                    <button>
+                        <input type="hidden" name="">
+                        <img src="Front-End/iconos/pen.svg" alt="bajar-opciones">
+                    </button>
+                </div>
+
+                <div class="cuerpo-articulo">
+
+                </div>
+            </article> 
+
+        </section>
+
+    </main>
+
+    <footer>
+        Control de Inventario
+    </footer>
+
+    <script src="Front-End/js/panel.js"></script>
+</body>
+</html>

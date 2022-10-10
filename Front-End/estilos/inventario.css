@@ -1,0 +1,71 @@
+
+@media (max-width: 590px){
+
+    #contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    article:not(.caja-opcion){
+        margin: 3px 5px;
+        border: 1px solid #cccccc;
+        box-shadow: 1px 1px 2px #a7a7a7;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: small;
+    }
+
+    .cabecera-articulo{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .nombre-articulo{
+        flex-grow: 1;
+    }
+
+    .cabecera-articulo > button{
+        display: flex;
+        background-color: inherit;
+        border: none;
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    #menu-inventario{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .caja-opcion{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: small;
+        margin: 5px;
+    }
+
+    .agregar{
+        background-color: #2db12d;
+    }
+
+    .eliminar{
+        background-color: #b12d2d;
+    }
+
+    .caja-opcion > img{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+
+}
