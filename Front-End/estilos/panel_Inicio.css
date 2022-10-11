@@ -1,0 +1,116 @@
+@media (max-width: 590px){
+
+    /* Cabecera de Informacion */
+    .marcadores{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .marcador{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        box-shadow: 2px 2px 3px #b8b8b8;
+    }
+
+    .dollar{
+        background-color: #2fb75a;
+    }
+
+    .productos{
+        background-color: #4b87d5;
+    }
+
+    .marcador-texto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 30px;
+    }
+
+    .marcador-imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .marcador-imagen > img{
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Contenido principal */
+    #contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .tipo{
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px #b8b8b8;
+        margin: 5px;
+    }
+
+    .lista{
+        display: flex;
+        overflow: hidden;
+        max-height: 0px;
+        transition: max-height 1s linear 0s;
+    }
+
+    .cabecera-tipo{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .cabecera-tipo img{
+        width: 25px;
+        height: 25px;
+    }
+
+    /* El elemento lista con clase activa se desplegara */
+    .active{
+        max-height: 300px;
+    }
+
+    /* Tabla de las listas */
+
+    .lista table{
+        border-collapse: collapse;
+        width: 100%;
+        text-align: justify;
+        font-size: small;
+        margin: 10px 5px;
+    }
+
+    .lista thead{
+        background-color: #414141;
+        color: #ffffff;
+    }
+
+    .lista thead th{
+        padding: 5px;
+    }
+
+    .lista tbody td{
+        padding: 5px;
+    }
+
+    .lista table tbody tr:hover{
+        background-color: #ded338;
+    }
+}

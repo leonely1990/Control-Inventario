@@ -1,0 +1,74 @@
+<!-- <table>
+
+                    <caption>
+                        <h3>Lista de Precios</h3>
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Bs</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>CocaCola 2L</td>
+                            <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>CocaCola 1.5L</td>
+                            <td>12</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Caramelo Vaca vieja</td>
+                            <td>3</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Speed Max Lata</td>
+                            <td>8.50</td>
+                        </tr>
+                    </tbody>
+
+                </table> -->
+
+
+                table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    caption{
+        padding: 10px;
+    }
+
+    tbody, thead{
+        text-align: justify;
+        font-size: small;
+    }
+
+    th{
+        padding: 5px;
+        background-color: #4c4c4c;
+        color: #ffffff;
+    }
+
+    td{
+        padding: 5px;
+    }
+
+    tr:nth-child(odd){
+        background-color: #e4e4e4;
+    }
+
+    tr:hover{
+        background-color: #fbff7e;
+    }

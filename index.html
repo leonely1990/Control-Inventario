@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Front-End/estilos/all.css">
-    <link rel="stylesheet" href="Front-End/estilos/panel.css">
+    <link rel="stylesheet" href="Front-End/estilos/mobile.css">
+    <link rel="stylesheet" href="Front-End/estilos/panel_Inicio.css">
     <title>Panel de Administracion</title>
 </head>
 <body>
@@ -25,15 +25,15 @@
                 <img src="Front-End/iconos/circle-xmark.svg" alt="cerrar">
             </button>
 
-            <ul class="menu-panel">
-                <li class="menu-panel-boton">
-                    <a href="index.html">
+            <ul class="menu-principal">
+                <li>
+                    <a href="index.html" class="menu-principal-boton">
                         <img src="Front-End/iconos/cube.svg" alt="inicio">
                         Inicio
                     </a>
                 </li>
-                <li class="menu-panel-boton">
-                    <a href="inventario.html">
+                <li>
+                    <a href="inventario.html" class="menu-principal-boton">
                         <img src="Front-End/iconos/clipboard-list.svg" alt="">
                         Inventario
                     </a>
@@ -42,8 +42,7 @@
 
         </aside>
 
-        <section id="contenido">
-
+        <section id="cabecera-informacion">
             <article class="marcadores">
                 
                 <div class="marcador">
@@ -60,55 +59,76 @@
                         <img src="Front-End/iconos/boxes-stacked.svg" alt="productos">
                     </div>
                     <div class="marcador-texto">
-                        4
+                        2
                     </div>
                 </div>
 
             </article>
+        </section>
 
-            <article class="lista-precios">
+        <section id="contenido">
 
-                <table>
+            
 
-                    <caption>
-                        <h3>Lista de Precios</h3>
-                    </caption>
+            <article class="tipo">
 
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Nombre</th>
-                            <th>Bs</th>
-                        </tr>
-                    </thead>
+                <div class="cabecera-tipo">
+                    <span>Bebidas</span>
+                    <img src="Front-End/iconos/angle-down.svg" alt="desplegar" id="desplegar">
+                </div>
 
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>CocaCola 2L</td>
-                            <td>15</td>
-                        </tr>
+                <div class="lista">
 
-                        <tr>
-                            <td>2</td>
-                            <td>CocaCola 1.5L</td>
-                            <td>12</td>
-                        </tr>
+                    <table>
 
-                        <tr>
-                            <td>3</td>
-                            <td>Caramelo Vaca vieja</td>
-                            <td>3</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Bs</th>
+                            </tr>
+                        </thead>
 
-                        <tr>
-                            <td>4</td>
-                            <td>Speed Max Lata</td>
-                            <td>8.50</td>
-                        </tr>
-                    </tbody>
+                        <tbody>
+                            <tr>
+                                <td>CocaCola 2L</td>
+                                <td>25</td>
+                            </tr>
+                        </tbody>
 
-                </table>
+                    </table>
+
+                </div>
+
+            </article>
+
+            <article class="tipo">
+
+                <div class="cabecera-tipo">
+                    <span>Galletas</span>
+                    <img src="Front-End/iconos/angle-down.svg" alt="desplegar" id="desplegar">
+                </div>
+
+                <div class="lista">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Bs</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Maria Puig</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
 
             </article>
 

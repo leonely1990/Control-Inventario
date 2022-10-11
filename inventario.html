@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Front-End/estilos/all.css">
-    <link rel="stylesheet" href="Front-End/estilos/inventario.css">
+    <link rel="stylesheet" href="Front-End/estilos/mobile.css">
+    <link rel="stylesheet" href="Front-End/estilos/panel_inventario.css">
     <title>Panel de Administracion</title>
 </head>
 <body>
@@ -25,15 +25,15 @@
                 <img src="Front-End/iconos/circle-xmark.svg" alt="cerrar">
             </button>
 
-            <ul class="menu-panel">
-                <li class="menu-panel-boton">
-                    <a href="index.html">
+            <ul class="menu-principal">
+                <li>
+                    <a href="index.html" class="menu-principal-boton">
                         <img src="Front-End/iconos/cube.svg" alt="inicio">
                         Inicio
                     </a>
                 </li>
-                <li class="menu-panel-boton">
-                    <a href="inventario.html">
+                <li>
+                    <a href="inventario.html" class="menu-principal-boton">
                         <img src="Front-End/iconos/clipboard-list.svg" alt="">
                         Inventario
                     </a>
@@ -42,7 +42,7 @@
 
         </aside>
 
-        <section id="menu-inventario">
+        <!-- <section id="menu-inventario">
 
             <div class="caja-opcion agregar">
                 <img src="Front-End/iconos/circle-plus.svg" alt="agregar">
@@ -54,45 +54,83 @@
                 <span>Eliminar Articulo</span>
             </div>
 
-        </section>
+        </section> -->
 
         <section id="contenido">
 
-            <article>
-                <div class="cabecera-articulo">
-                    <!-- Nombre del articulo -->
-                    <span class="nombre-articulo">CocaCola 2L</span>
-                    <!-- Cantidad del articulo -->
-                    <span>15-U</span>
-                    <button>
-                        <input type="hidden" name="">
-                        <img src="Front-End/iconos/pen.svg" alt="bajar-opciones">
-                    </button>
+            <article class="tipo">
+
+                <div class="cabecera-tipo">
+                    <span>Bebidas</span>
+                    <img src="Front-End/iconos/angle-down.svg" alt="desplegar" id="desplegar">
                 </div>
 
-                <div class="cuerpo-articulo">
+                <div class="lista">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Bs</th>
+                                <th>Cant</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>CocaCola 2L</td>
+                                <td>25</td>
+                                <td>5</td>
+                                <td><img src="Front-End/iconos/pen-circle.svg" alt="editar"></td>
+                            </tr>
+
+                            <tr>
+                                <td>CocaCola 1.5L</td>
+                                <td>20</td>
+                                <td>15</td>
+                                <td><img src="Front-End/iconos/pen-circle.svg" alt="editar"></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
 
                 </div>
-            </article>   
-            
-            <article>
-                <div class="cabecera-articulo">
-                    <!-- Nombre del articulo -->
-                    <span class="nombre-articulo">CocaCola 1.5L</span>
-                    <!-- Cantidad del articulo -->
-                    <span>15-U</span>
-                    <button>
-                        <input type="hidden" name="">
-                        <img src="Front-End/iconos/pen.svg" alt="bajar-opciones">
-                    </button>
+
+            </article>
+
+            <article class="tipo">
+
+                <div class="cabecera-tipo">
+                    <span>Galletas</span>
+                    <img src="Front-End/iconos/angle-down.svg" alt="desplegar" id="desplegar">
                 </div>
 
-                <div class="cuerpo-articulo">
+                <div class="lista">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Bs</th>
+                                <th>Cant</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Maria Puig</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
 
                 </div>
-            </article> 
 
-        </section>
+            </article>
 
     </main>
 

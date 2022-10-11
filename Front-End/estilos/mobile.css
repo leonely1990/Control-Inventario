@@ -1,0 +1,103 @@
+:root{
+    --color-fondo: #e8e8e8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+@media (max-width: 590px) {
+
+    /* Cabecera */
+    header{
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        background-color: var(--color-fondo);
+    }
+
+    /* Cuerpo de Pagina */
+    body{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+        position: relative;
+    }
+
+    /* Contenido principal */
+    main{
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    /* Pie de Pagina */
+    footer{
+        text-align: center;
+        padding: 5px;
+        background-color: var(--color-fondo);
+    }
+
+    /* Barra lateral que contiene el menu principal del proyecto */
+    #barra-lateral{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: var(--color-fondo);
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: -130px;
+        height: 100vh;
+        transition: left 0.5s ease;
+    }
+
+    /* Boton que despliega la barra lateral */
+    #boton-menu-mobil{
+        display: flex;
+        border: none;
+        background-color: inherit;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    /* Boton que oculta de nuevo la Barra lateral que contiene el menu principal del proyecto */
+    #cerrar-barra-lateral{
+        display: flex;
+        width: 20px;
+        cursor: pointer;
+        align-self: flex-end;
+        background-color: inherit;
+        border: none;
+        padding: 14px 5px;
+        margin-bottom: 1px;
+    }
+
+    /* Menu principal del proyecto */
+    .menu-principal{
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    /* Botones del menu principal */
+    .menu-principal-boton{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        color: #000000;
+        padding: 7px;
+    }
+
+    /* Iconos del menu principal */
+    .menu-principal-boton > img{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+}
