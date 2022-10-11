@@ -26,3 +26,20 @@ for(let tipo of tipos){
         }
     });
 }
+
+const prueba = document.getElementById("prueba");
+const cerrar_prueba = document.getElementsByClassName("cerrar-popups")[0];
+
+cerrar_prueba.addEventListener("click", () => {
+    document.getElementsByClassName("popups-editar")[0].style.display = "none";
+});
+
+prueba.addEventListener("click" , () => {
+
+    document.getElementsByClassName("popups-editar")[0].style.display = "block";
+
+});
+
+function validar(formulario) {
+    return false;
+}

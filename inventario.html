@@ -10,6 +10,27 @@
 </head>
 <body>
 
+    <!-- Popups -->
+    <div class="popups-editar">
+        
+        <div class="contenedor-formulario">
+            <button class="cerrar-popups">
+                <img src="Front-End/iconos/circle-xmark.svg" alt="cerrar">
+            </button>
+            <h3>Editar Articulo</h3>
+            <form action="" method="post" onsubmit="return validar(this)">
+                <input type="text" name="" id="" placeholder="Nombre">
+                <input type="text" name="" id="" placeholder="Precio Unitario">
+                <input type="number" name="" id="" placeholder="Cantidad">
+                <div>
+                    <input type="submit" value="Guardar">
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
     <header>
         <h3>Inventario</h3>
         <button id="boton-menu-mobil">
@@ -42,20 +63,6 @@
 
         </aside>
 
-        <!-- <section id="menu-inventario">
-
-            <div class="caja-opcion agregar">
-                <img src="Front-End/iconos/circle-plus.svg" alt="agregar">
-                <span>Crear Articulo</span>
-            </div>
-
-            <div class="caja-opcion eliminar">
-                <img src="Front-End/iconos/circle-minus.svg" alt="agregar">
-                <span>Eliminar Articulo</span>
-            </div>
-
-        </section> -->
-
         <section id="contenido">
 
             <article class="tipo">
@@ -82,8 +89,10 @@
                             <tr>
                                 <td>CocaCola 2L</td>
                                 <td>25</td>
-                                <td>5</td>
-                                <td><img src="Front-End/iconos/pen-circle.svg" alt="editar"></td>
+                                <td>50</td>
+                                <td>
+                                    <img src="Front-End/iconos/pen-circle.svg" alt="editar" id="prueba">
+                                </td>
                             </tr>
 
                             <tr>
